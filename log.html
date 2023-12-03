@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            color: #333;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-container button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+
+        .register-link {
+            margin-top: 10px;
+        }
+
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form name="login_form" id="login_form" onsubmit="return submitForm()">
+            <input type="text" required placeholder="Username" required id="username">
+            <input type="password" required placeholder="Password" required id="password">
+            <button type="submit">Login</button>
+        </form>
+        
+    </div>
+</body>
+<script>
+   function submitForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            
+            // Assuming the form is valid, redirect to a new link
+            window.location.href = 'https://www.booking.com/region/in/goa.en.html?aid=324798;label=goa-dYN28boQXVZRPxtpR3YzwgS544246903658:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-2900530958:lp9062279:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YcWHiCDB7igB8XpJKYgu4TM;ws=&gad_source=1&gclid=CjwKCAiA9ourBhAVEiwA3L5RFhJVu3Dh85-OAeTOG64q9rF8z5uO-PDq33ZUgVdkKpqxbZ1u7r64cRoCMUMQAvD_BwE'; // Replace with your desired URL
+            return false;
+        }
+</script>
+</html>
+
